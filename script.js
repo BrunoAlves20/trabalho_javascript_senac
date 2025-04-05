@@ -29,3 +29,27 @@ document.getElementById('executar').addEventListener('click', function () {
     <p><strong>Resultado com <code>map()</code>:</strong> [${dobrados.join(', ')}]</p>
   `;
 });
+
+document.getElementById('filtrar').addEventListener('click', function () {
+  const dados = document.getElementById('dados').value;
+
+  const numeros = dados
+    .split(',')
+    .map(n => n.trim())
+    .filter(n => n !== '')
+    .map(Number);
+
+  if (numeros.some(isNaN)) {
+    document.getElementById('saidaFiltro').innerHTML = `
+      <p style="color: red;">Por favor, insira apenas números válidos separados por vírgula.</p>
+    `;
+    return;
+  }
+
+  const pares = numeros.filter(n => n % 2 === 0);
+
+  document.getElementById('saidaFiltro').innerHTML = `
+    <p><strong>Array digitado:</strong> [${numeros.join(', ')}]</p>
+    <p><strong>Resultado com <code>filter()</code> (números pares):</strong> [${pares.join(', ')}]</p>
+  `;
+});

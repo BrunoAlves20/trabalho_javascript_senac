@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-
-  <h1>Exemplo: Método <code>map()</code> em Arrays</h1>
+ <div class="container">
+  <h1>Exemplo 1: Método <code>map()</code> em Arrays</h1>
 
   <!-- Explicação fixa -->
-  <div class="resultado" id="explicacao">
+  <div class="explicacao">
     <p>O método <code>map()</code> cria uma nova matriz executando uma função em cada elemento da matriz.</p>
     <ul>
       <li>O <code>map()</code> <strong>não modifica</strong> o array original.</li>
@@ -33,6 +33,38 @@
 
   <div class="resultado" id="saida"></div>
 
+  <br>
+  <h1><strong>--------------------------------------------------------------------------</strong></h1>
+  <br>
+  
+  <!-- Explicação sobre filter() -->
+  <h1>Exemplo 2: Método <code>filter()</code> em Arrays</h1>
+
+  <div class="explicacao">
+  <p>O método <code>filter()</code> cria uma nova array contendo apenas os elementos que passam em um teste.</p>
+  <ul>
+    <li>Ele <strong>não altera</strong> o array original.</li>
+    <li>Retorna uma nova array com os elementos que retornaram <code>true</code> na função de teste.</li>
+    <li>Quando usar filter()?<br>
+        Quando você quer remover elementos com base em uma regra.<br>
+        Quando quer criar uma nova lista com base em algum critério.<br>
+        Quando quer deixar seu código mais funcional e legível, ao invés de usar for com if.</li>
+  </ul>
+  <p><strong>Exemplo:</strong></p>
+  <p>Array original: <code>[1, 2, 3, 4, 5, 6]</code></p>
+  <p>Com <code>filter(n => n % 2 === 0)</code>: <code>[2, 4, 6]</code></p>
+  </div>
+
+  <!-- Interação com o usuário -->
+  <h2>Teste você mesmo!</h2>
+
+  <label for="dados">Digite números separados por vírgula:</label><br>
+  <input type="text" id="dados" placeholder="Ex: 1,2,3,4,5">
+  <button id="filtrar">Filtrar pares</button>
+
+  <div id="saidaFiltro"></div>
+
   <script src="script.js"></script>
+ </div>
 </body>
 </html>
