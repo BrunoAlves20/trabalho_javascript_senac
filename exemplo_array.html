@@ -63,6 +63,67 @@
   <button id="filtrar">Filtrar pares</button>
 
   <div id="saidaFiltro"></div>
+  
+  <!-- ---------------------------------------------------------------- -->
+  <br>
+  <h1><strong>--------------------------------------------------------------------------</strong></h1>
+  <br>
+
+  <!-- Explicação sobre reduce() -->
+  <h1>Exemplo 3: Método <code>reduce()</code> em Arrays</h1>
+
+  <div class="explicacao">
+    <p>O método <code>reduce()</code> executa uma função acumuladora em cada elemento do array, resultando em um único valor.</p>
+    <ul>
+      <li>Permite transformar um array em qualquer outra estrutura: número, objeto, string, etc.</li>
+      <li>Ideal para somar, agrupar ou transformar dados.</li>
+    </ul>
+    <p><strong>Exemplo:</strong></p>
+    <p>Array original: <code>['maçã', 'banana', 'maçã', 'laranja', 'banana', 'maçã']</code></p>
+    <p>Com <code>reduce()</code>: <code>{ maçã: 3, banana: 2, laranja: 1 }</code></p>
+  </div>
+
+  <!-- Interação com o usuário -->
+  <h2>Teste você mesmo!</h2>
+
+  <label for="itens">Digite itens separados por vírgula:</label><br>
+  <input type="text" id="itens" placeholder="Ex: maçã,banana,maçã">
+  <button id="contar">Contar Itens</button>
+
+  <div id="saidaReduce"></div>
+
+  <!-- ---------------------------------------------------------------- -->
+  <br>
+  <h1><strong>--------------------------------------------------------------------------</strong></h1>
+  <br>
+
+  <!-- Explicação sobre spread operator -->
+  <h1>Exemplo 4: Operador <code>spread (...)</code> em Arrays</h1>
+
+  <div class="explicacao">
+    <p>O operador <code>spread (...) </code> permite expandir elementos de arrays (ou objetos) em outros arrays ou argumentos.</p>
+    <ul>
+      <li>Útil para combinar arrays ou copiar arrays sem referência.</li>
+    </ul>
+    <p><strong>Exemplo:</strong></p>
+    <p>Arrays: <code>[1, 2, 3]</code> e <code>[4, 5]</code></p>
+    <p>Com <code>spread(...)</code>: <code>[1, 2, 3, 4, 5]</code></p>
+  </div>
+
+  <!-- Interação com o usuário -->
+  <h2>Teste você mesmo!</h2>
+
+  <label for="array1">Digite o primeiro array:</label><br>
+  <input type="text" id="array1" placeholder="Ex: 1,2,3"><br><br>
+
+  <label for="array2">Digite o segundo array:</label><br>
+  <input type="text" id="array2" placeholder="Ex: 4,5,6"><br><br>
+
+  <button id="mesclar">Mesclar Arrays</button>
+
+  <div id="saidaSpread"></div>
+
+  
 
   <script src="script.js"></script>
  </div>
