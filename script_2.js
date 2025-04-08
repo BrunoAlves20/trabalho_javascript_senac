@@ -94,7 +94,7 @@ document.getElementById('mesclar').addEventListener('click', function () {
     <p><strong>Array 2:</strong> [${b.join(', ')}]</p>
     <p><strong>Resultado com <code>spread(...)</code>:</strong> [${mesclado.join(', ')}]</p>
   `;
-});
+});  
 
 document.getElementById('resetMap').addEventListener('click', function () {
   document.getElementById('entrada').value = '';
